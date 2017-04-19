@@ -11,6 +11,9 @@ It relies on YSFReflector by G4KLX (see https://github.com/g4klx/YSFClients). At
 this place a big thank you to Jonathan for his great work he did with this 
 software.
 
+Forked by LA1FTA to save modifications made on the YSF006 deployment here:
+http://ysf.hamlabs.no/ysf/
+
 Required are
 ============
 * Webserver like 

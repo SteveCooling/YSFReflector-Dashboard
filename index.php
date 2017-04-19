@@ -31,6 +31,10 @@ include "version.php";
  	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
  	<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   	<style>
+	body {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
  	    h4 {
  		display: inline
  		}		
@@ -39,7 +43,7 @@ include "version.php";
   </head>
   <body>
   <div class="page-header" style="position:relative;">
-  <h1><small>YSFReflector-Dashboard by DG9VH for Reflector:</small>  <?php echo getConfigItem("Info", "Name", $configs); ?> / <?php echo getConfigItem("Info", "Description", $configs); ?></h1>
+  <h1><?php echo getConfigItem("Info", "Name", $configs); ?> / <?php echo getConfigItem("Info", "Description", $configs); ?> dashboard</h1>
   <h4>YSFReflector by G4KLX Version: 
   <?php  echo getYSFReflectorVersion(); ?></h4>
   <?php
@@ -54,8 +58,8 @@ include "version.php";
 checkSetup();
 // Here you can feel free to disable info-sections by commenting out with // before include
 include "include/txinfo.php";
-include "include/sysinfo.php";
-include "include/disk.php";
+//include "include/sysinfo.php";
+//include "include/disk.php";
 include "include/gateways.php";
 include "include/lh.php";
 include "include/allheard.php";

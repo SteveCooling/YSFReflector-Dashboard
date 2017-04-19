@@ -176,4 +176,4 @@ function getSize($filesize, $precision = 2) {
 	}
 	return round($filesize, $precision).' '.$units[$idUnit].'B';
 }
-?>
+
